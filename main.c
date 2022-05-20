@@ -1,82 +1,62 @@
-#include "fdf.h"
+#include "../includes/fdf.h"
 
-int get_height(char *file)
+static void	print_menu(t_fdf *matrix)
 {
-  int   fd;
-  int   height;
-  char  *line;
-  
-  fd = open(file, O_RDONLY, 0);
-  heihgt = 0;
-  while(get_next_line(fd, &line))
-  {
-    height++;
-    free(line);
-  }
-  close(fd);
-  return (height);
+	int		y;
+	int		x;
+	void	*mlx;
+	void	*win;
+
+	y = 0;
+	x = 20;
+	mlx = matrix->mlx_ptr;
+	win = matrix->win_ptr;
+	mlx_string_put(mlx, win, 65, x, y += 20, 0xf5ebe0, \
+					"How to use this programm");
+	mlx_string_put(mlx, win, 15, x, y += 35, 0xf5ebe0, \
+					"Zoom: R / F");
+	mlx_string_put(mlx, win, 15, x, y += 30, 0xf5ebe0, \
+					"Move: Arrows or WASD");
+	mlx_string_put(mlx, win, 15, x, y += 30, 0xf5ebe0, \
+					"Flatten: Shift");
+	mlx_string_put(mlx, win, 15, x, y += 30, 0xf5ebe0, \
+					"Isometric rotatation: Q / E");
+	mlx_string_put(mlx, win, 15, x, y += 30, 0xf5ebe0, \
+					"Change angle: Z / X");
+	mlx_string_put(mlx, win, 15, x, y += 30, 0xf5ebe0, \
+					"Projection");
+	mlx_string_put(mlx, win, 57, x, y += 25, 0xf5ebe0, \
+					"ISO: I Key");
+	mlx_string_put(mlx, win, 57, x, y += 25, 0xf5ebe0, \
+					"Parallel: P Key");
 }
 
-int get_width(char *file)
+static t_fdf	default(t_fdf m)
 {
-  int   fd;
-  int   width;
-  char  *line;
-  
-  fd = open(file, O_RDONLY, 0);
-  width = 0;
-  get_next_line(fd, &line);
-  width = ft_wcount(line, ' ');
-  free(line);
-  close(fd);
-  return (height);
-}
-
-void  matrix_fill(int *m_line, char *line)
-{
-  int   i;
-  char  **values;
-  
-  values = ft_strsplit(line, ' ');
-  i = 0;
-  while (nums[i])
-  {
-    m_line[i] = ft_atoi(nums[i]);
-    free(values[i]);
-    i++;
-  }
-  free(values);
-}
-
-void  file_read(t_fdf *matrix)
-{
-  	int   i;
-  	int   fd;
-  	chat  *line;
-
-  	i = 0;
-  	data->height = get_height(file);
-  	data->width = get_width(file);
-  	data->matrix = (int **)malloc(sizeof(int *) * (data->height + 1));
-  	while (i < data->height)
-    		data->matrix[i] = (int *)malloc(sizeof(int) * (data->width + 1));
-  	fd = open(file, O_RDONLY, 0);
-  	i = 0;
-  	while (get_next_line(fd, &line))
-  	{
-    		fill_matrix(data->matrix[i], line);
-    		free(line);
-		i++;
-	}
-	data->matrix[i] = NULL;
+	m.color = 0xffffff;
+	m.height = 0;
+	m.iso_angle = 0.5;
+	m.shift_x = 150;
+	m.shift_y = 150;
+	m.z_matrix = 0;
+	m.zoom = 20;
+	m.width = 0;
+	m.mlx_ptr = mlx_init();
+	m.win_ptr = mlx_new_window(matrix->mlx_ptr, 1000, 1000, "FDF - Fil de fer");
+	return (m);
 }
 
 int		main(int argc, char **argv)
 {
-	t_fdf **matrix;
-	
+	t_fdf	*matrix;
+
 	if (argc != 2)
 		ft_error("usage: ./fdf [map name]");
- 	matrix = (t_ftf *)malloc(sizeof(fdf));
- 	file_read(matrix);
+	matrix = (t_fdf *)malloc(sizeof(fdf));
+	file_read(argv[1], matrix);
+	matrix = default(matrix);
+	print_menu(matrix);
+	map(matrix);
+	mlx_key_hook(matrix->win_ptr, deal_key, matrix);
+	mlx_loop(matrix->mlx_ptr);
 }

@@ -51,8 +51,10 @@ int		main(int argc, char **argv)
 	t_fdf	*matrix;
 
 	if (argc != 2)
-		ft_error("usage: ./fdf [map name]");
-	matrix = (t_fdf *)malloc(sizeof(fdf));
+		ft_error("Error: please, use this programm correctly (./fdf [map name])\n");
+	matrix = (t_fdf *)malloc(sizeof(t_fdf));
+	if (!matrix)
+		ft_error("Error: unexpected error with malloc.\n")
 	file_read(argv[1], matrix);
 	matrix = default(matrix);
 	print_menu(matrix);

@@ -1,4 +1,4 @@
-#include "fdf.h"
+#include "../includes/fdf.h"
 
 static int	movement_key(int key, t_fdf *matrix)
 {

@@ -4,8 +4,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
-# include <fcntl.h>
-# include <limits.h>
 # include <math.h>
 
 typedef struct s_fdf
@@ -46,11 +44,13 @@ void	map(t_fdf *matrix);
 /*
 ** Movement key
 */
-int	keys(int key, t_fdf *matrix);
+int		keys(int key, t_fdf *matrix);
 
 /*
-** 
+** Errors and destruction
 */
+void	ft_error(char *message);
+void	destruction(t_fdf matrix);
 
 /*
 ** 

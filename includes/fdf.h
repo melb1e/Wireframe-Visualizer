@@ -39,8 +39,13 @@
 /*
 ** Default window
 */
-# define HEIGHT				1080
+# define WINDOW_NAME		"FdF"
+
+/*
+** Default window
+*/
 # define WIDTH				1920
+# define HEIGHT				1080
 # define MENU				250
 
 /*
@@ -59,6 +64,7 @@
 # define MEDIUM 			0x8ba1d9
 # define LIGHT				0x8bc4d9
 # define LIGHTEST			0x8bd99b
+# define TEXT_COLOR			0xf5ebe0
 
 /*
 ** Zoom

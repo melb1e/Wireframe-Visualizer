@@ -63,6 +63,15 @@ fclean:	clean
 		cd $(LIBFT_DIR) && $(MAKE) fclean
 		cd $(MLXDIR) && $(MAKE) clean
 
+leaks:
+		@valgrind --leak-check=full --track-origins=yes --max-stackframe=5243248 ./${NAME} ./test_maps/42.fdf
+
+leakfull:
+		@valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=med --max-stackframe=5243248 --track-origins=yes ./${NAME} ./test_maps/42.fdf
+
+norma:
+		norminette $(SRC_DIR) $(LIBFT_DIR) $(INC_DIR)
+
 re:		fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re norma

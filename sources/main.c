@@ -23,17 +23,21 @@ void	print_menu(t_fdf *fdf)
 	x = 5;
 	mlxx = fdf->mlx;
 	winn = fdf->win;
-	mlx_string_put(mlxx, winn, x, y += 20, 0xf5ebe0, "FDF");
-	mlx_string_put(mlxx, winn, x, y += 35, 0xf5ebe0, "Zoom: R / F");
-	mlx_string_put(mlxx, winn, x, y += 30, 0xf5ebe0, "Move: Arrows or WASD");
-	mlx_string_put(mlxx, winn, x, y += 30, 0xf5ebe0, "Angle: YUIHJK or 789456");
-	mlx_string_put(mlxx, winn, x, y += 25, 0xf5ebe0, "X-Axis - U/J/5/8");
-	mlx_string_put(mlxx, winn, x, y += 25, 0xf5ebe0, "Y-Axis - K/H/4/6");
-	mlx_string_put(mlxx, winn, x, y += 25, 0xf5ebe0, "Z-Axis - Y/I/7/9");
-	mlx_string_put(mlxx, winn, x, y += 30, 0xf5ebe0, "Change elevation: Z / X");
-	mlx_string_put(mlxx, winn, x, y += 30, 0xf5ebe0, "Projection");
-	mlx_string_put(mlxx, winn, x, y += 25, 0xf5ebe0, "ISO: < Key");
-	mlx_string_put(mlxx, winn, x, y += 25, 0xf5ebe0, "Parallel: > Key");
+	mlx_string_put(mlxx, winn, x, y += 20, TEXT_COLOR, "FDF");
+	mlx_string_put(mlxx, winn, x, y += 35, TEXT_COLOR, "Zoom: R / F");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Tip: use scroll wheel");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Move: Arrows or WASD");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Tip: try using LMB");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Angle: YUIHJK or 789456");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Tip: try using RMB");
+	mlx_string_put(mlxx, winn, x, y += 25, TEXT_COLOR, "Axis X - U/J/5/8");
+	mlx_string_put(mlxx, winn, x, y += 25, TEXT_COLOR, "Axis Y - K/H/4/6");
+	mlx_string_put(mlxx, winn, x, y += 25, TEXT_COLOR, "Axis Z - Y/I/7/9");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Change elevation: Z / X");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Change elevation: Z / X");
+	mlx_string_put(mlxx, winn, x, y += 30, TEXT_COLOR, "Projection");
+	mlx_string_put(mlxx, winn, x, y += 25, TEXT_COLOR, "ISO: < Key");
+	mlx_string_put(mlxx, winn, x, y += 25, TEXT_COLOR, "Parallel: > Key");
 }
 
 static int	close_all(void *param)

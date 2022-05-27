@@ -41,7 +41,7 @@ t_fdf	*init_fdf(t_map *map)
 	fdf->mlx = mlx_init();
 	if (!fdf->mlx)
 		ft_error(ERR_FDF_INIT);
-	fdf->win = mlx_new_window(fdf->mlx, WIDTH, HEIGHT, "FdF - Fil de fer");
+	fdf->win = mlx_new_window(fdf->mlx, WIDTH, HEIGHT, WINDOW_NAME);
 	if (!fdf->win)
 		ft_error(ERR_FDF_INIT);
 	fdf->image = mlx_new_image(fdf->mlx, WIDTH, HEIGHT);

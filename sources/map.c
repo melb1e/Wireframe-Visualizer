@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   map.c                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mmarcele <mmarcele@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 14:00:08 by mmarcele          #+#    #+#             */
-/*   Updated: 2022/05/25 18:55:46 by mmarcele         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/fdf.h"
 
 static t_coordinates	*create_coordinate(char *string)
@@ -77,5 +65,5 @@ int	read_map(const int fd, t_coordinates **stack, t_map *map)
 	}
 	if (!(*stack))
 		ft_error(ERR_MAP_READ);
-	return ((int)line);
+	return ((int)*line);
 }

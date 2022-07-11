@@ -9,7 +9,7 @@ LIBFT		= libft.a
 LIBFT_MAKE	= cd $(LIBFT_DIR) && $(MAKE)
 LIBFT_INC	= -L libft -lft
 
-MLXDIR		= minilibx_macos
+MLXDIR		= minilibx-linux
 MLXMAKE		= cd $(MLXDIR) && $(MAKE)
 MLX_INC		= -Lmlx -lmlx -framework OpenGL -framework AppKit
 

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf_coord.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mmarcele <mmarcele@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 13:51:50 by mmarcele          #+#    #+#             */
-/*   Updated: 2022/05/25 18:04:28 by mmarcele         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/fdf.h"
 
 static void	put_to_array(t_coordinates *temp, t_map *map, size_t i)
@@ -25,7 +13,7 @@ static void	put_to_array(t_coordinates *temp, t_map *map, size_t i)
 void	stack_to_arrays(t_coordinates **stack, t_map *map)
 {
 	t_coordinates	*temp;
-	size_t			i;
+	int				i;
 	size_t			map_size;
 
 	map_size = map->width * map->height * sizeof(size_t);

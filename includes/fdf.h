@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf.h                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mmarcele <mmarcele@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/22 13:20:00 by mmarcele          #+#    #+#             */
-/*   Updated: 2022/05/25 18:44:22 by mmarcele         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FDF_H
 # define FDF_H
 
@@ -20,7 +8,8 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # include "../libft/libft.h"
-# include "../minilibx_macos/mlx.h"
+// Add your MiniLibX headers here
+// # include "../minilibx-linux/mlx.h"
 
 # define ERR_USE			"Error 101 [Usage], try ./fdf [map name].\n"
 # define ERR_READ			"Error 102 [Reading], invalid map or permissions.\n"

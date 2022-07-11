@@ -1,0 +1,18 @@
+{
+	"makefile.extensionOutputFolder": "./.vscode",
+	"files.associations": {
+		"*.html": "html",
+		"*.css": "css",
+		"*.js": "javascript",
+		"*.json": "json",
+		"*.md": "markdown",
+		"*.yml": "yaml",
+		"*.yaml": "yaml",
+		"*.xml": "xml",
+		"*.ts": "typescript",
+		"*.tsx": "typescript",
+		"*.jsx": "javascript",
+		"*.vue": "vue",
+		"string.h": "c"
+	}
+}

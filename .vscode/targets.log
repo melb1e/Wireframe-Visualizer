@@ -1,0 +1,543 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jul 11 12:40:44 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 36)
+OBJ = $(patsubst $(SRC_DIR)%, $(OBJ_DIR)%, $(SRC:.c=.o))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 19)
+SRC = $(SRC_DIR)/error.c $(SRC_DIR)/fdf_coord.c $(SRC_DIR)/keys_actions.c $(SRC_DIR)/keys_mouse.c $(SRC_DIR)/keys.c $(SRC_DIR)/main.c $(SRC_DIR)/map.c $(SRC_DIR)/master_camera.c $(SRC_DIR)/master_draw.c $(SRC_DIR)/master_initialization.c $(SRC_DIR)/master.c $(SRC_DIR)/lists.c
+# makefile (from 'Makefile', line 9)
+LIBFT_MAKE = cd $(LIBFT_DIR) && $(MAKE)
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 18)
+SRC_DIR = sources
+# environment
+LC_NAME = ru_RU.UTF-8
+# environment
+LC_NUMERIC = ru_RU.UTF-8
+# environment
+VSCODE_CWD = /home/melb1e
+# environment
+WINDOWPATH = 2
+# makefile (from 'Makefile', line 14)
+MLX_INC = -Lmlx -lmlx -framework OpenGL -framework AppKit
+# environment
+LC_ADDRESS = ru_RU.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# makefile (from 'Makefile', line 35)
+OBJ_DIR = objects
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/100/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/melb1e/Documents/Wireframe-Visualizer
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# makefile (from 'Makefile', line 16)
+INCREMAKE = Makefile
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/melb1e/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+# makefile (from 'Makefile', line 8)
+LIBFT = libft.a
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/melb1e/Documents/Wireframe-Visualizer
+# makefile (from 'Makefile', line 32)
+INC_DIR = includes
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 38)
+OBJ_INC = -I mlx -I $(INC_DIR) -I libft
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-gnome:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 7117
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 40)
+RM_DIR = rm -rf
+# environment
+SESSION_MANAGER = local/ferrion:@/tmp/.ICE-unix/1867,unix/ferrion:/tmp/.ICE-unix/1867
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 10)
+LIBFT_INC = -L libft -lft
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+PHANTOMJS_PLATFORM = linux
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 2)
+MAKE = make
+# environment
+SNAP_COOKIE = URpjRXkkE-N9p4ZVJoWNU8O2U6VfcGdKQbs5lx7rsSe7B1CE9kyN
+# environment
+PATH = /home/melb1e/.local/bin:/home/melb1e/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = ru_RU.UTF-8
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 7)
+LIBFT_DIR = libft
+# environment
+SNAP_USER_COMMON = /home/melb1e/snap/code/common
+# environment
+LC_TIME = ru_RU.UTF-8
+# environment
+SNAP = /snap/code/100
+# environment
+INVOCATION_ID = d165c17350f846cbaedfcdcf185da992
+# environment
+SNAP_REVISION = 100
+# environment
+SNAP_REAL_HOME = /home/melb1e
+# environment
+USERNAME = melb1e
+# environment
+LC_TELEPHONE = ru_RU.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 33)
+INC = $(INC_DIR) fdf.h
+# makefile (from 'Makefile', line 1)
+NAME = fdf
+# makefile (from 'Makefile', line 41)
+RM_FILE = rm -f
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = melb1e
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := fdf
+# environment
+SYSTEMD_EXEC_PID = 1926
+# makefile (from 'Makefile', line 13)
+MLXMAKE = cd $(MLXDIR) && $(MAKE)
+# environment
+DISPLAY = :0
+# environment
+USER = melb1e
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/100
+# environment
+SNAP_CONTEXT = URpjRXkkE-N9p4ZVJoWNU8O2U6VfcGdKQbs5lx7rsSe7B1CE9kyN
+# environment
+MANAGERPID = 1277
+# environment
+LC_MEASUREMENT = ru_RU.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7066
+# environment
+_ = /snap/code/100/usr/share/code/code
+# environment
+LC_PAPER = ru_RU.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 5)
+CFLAGS = -Wall -Wextra -Werror -g
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/melb1e/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:28589
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/melb1e
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-0d630284-1.69.0-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/100/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 92d25e35
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from 'Makefile', line 12)
+MLXDIR = minilibx-linux
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PHANTOMJS_ARCH = x64
+ 
+# makefile (from 'Makefile', line 4)
+CC = cc
+# environment
+SNAP_USER_DATA = /home/melb1e/snap/code/100
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
+# environment
+LC_IDENTIFICATION = ru_RU.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=145/1024=14%, Rehash=0, Collisions=8/220=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66312, inode 4074618): 10 files, no impossibilities.
+# sources (device 66312, inode 4074723): 12 files, no impossibilities so far.
+# includes (device 66312, inode 4074665): 3 files, no impossibilities so far.
+
+# 25 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+objects/%.o: sources/%.c Makefile includes/fdf.h
+#  recipe to execute (from 'Makefile', line 49):
+	$(CC) $(CFLAGS) $(OBJ_INC) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+objects/master_draw.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+norma:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 73):
+		norminette $(SRC_DIR) $(LIBFT_DIR) $(INC_DIR)
+
+objects/master.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/error.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-11 12:39:03.418610441
+#  File has been updated.
+#  Successfully updated.
+
+objects/map.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/lists.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-11 12:40:24.22238756
+#  File has been updated.
+#  Successfully updated.
+
+objects/error.o: sources/error.c Makefile includes/fdf.h | objects
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'error'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  recipe to execute (from 'Makefile', line 49):
+	$(CC) $(CFLAGS) $(OBJ_INC) -c $< -o $@
+
+leaks:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 67):
+		@valgrind --leak-check=full --track-origins=yes --max-stackframe=5243248 ./${NAME} ./test_maps/42.fdf
+
+objects/master_initialization.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 58):
+		${RM_DIR} ${OBJ_DIR}
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+fdf: objects/error.o objects/fdf_coord.o objects/keys_actions.o objects/keys_mouse.o objects/keys.o objects/main.o objects/map.o objects/master_camera.o objects/master_draw.o objects/master_initialization.o objects/master.o objects/lists.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  recipe to execute (from 'Makefile', line 44):
+	$(MLXMAKE)
+	$(LIBFT_MAKE)
+	$(CC) $(OBJ) $(LIBFT_INC) $(MLX_INC) -o $(NAME)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/keys.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: fdf
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+		${RM_FILE} $(NAME)
+		cd $(LIBFT_DIR) && $(MAKE) fclean
+		cd $(MLXDIR) && $(MAKE) clean
+
+objects/fdf_coord.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/master_camera.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := objects
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+#  recipe to execute (from 'Makefile', line 53):
+			mkdir -p $(OBJ_DIR)
+
+# Not a target:
+includes/fdf.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-11 12:39:19.722569071
+#  File has been updated.
+#  Successfully updated.
+
+objects/main.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/keys_actions.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+leakfull:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+		@valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=med --max-stackframe=5243248 --track-origins=yes ./${NAME} ./test_maps/42.fdf
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean re norma
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/keys_mouse.o: | objects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=27/1024=3%, Rehash=0, Collisions=0/81=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 52 / storage = 598 B / avg = 11 B
+# current buf: size = 8162 B / used = 598 B / count = 52 / avg = 11 B
+
+# strcache performance: lookups = 114 / hit rate = 54%
+# hash-table stats:
+# Load=52/8192=1%, Rehash=0, Collisions=2/114=2%
+# Finished Make data base on Mon Jul 11 12:40:44 2022
+
+ 

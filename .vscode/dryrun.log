@@ -1,0 +1,20 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/melb1e/Documents/Wireframe-Visualizer'
+mkdir -p objects
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/error.c -o objects/error.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/fdf_coord.c -o objects/fdf_coord.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/keys_actions.c -o objects/keys_actions.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/keys_mouse.c -o objects/keys_mouse.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/keys.c -o objects/keys.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/main.c -o objects/main.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/map.c -o objects/map.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/master_camera.c -o objects/master_camera.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/master_draw.c -o objects/master_draw.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/master_initialization.c -o objects/master_initialization.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/master.c -o objects/master.o
+cc -Wall -Wextra -Werror -g -I mlx -I includes -I libft -c sources/lists.c -o objects/lists.o
+cd minilibx-linux && make
+cd libft && make
+cc  objects/error.o  objects/fdf_coord.o  objects/keys_actions.o  objects/keys_mouse.o  objects/keys.o  objects/main.o  objects/map.o  objects/master_camera.o  objects/master_draw.o  objects/master_initialization.o  objects/master.o  objects/lists.o -L libft -lft -Lmlx -lmlx -framework OpenGL -framework AppKit -o fdf
+make: Leaving directory '/home/melb1e/Documents/Wireframe-Visualizer'
+ 
